@@ -132,6 +132,8 @@ h4 {
 
 .menu-wrap {
   align-items: center;
+  justify-content: end;
+  width: 100%;
 }
 
 .menu {
@@ -139,10 +141,15 @@ h4 {
   margin: 0;
   padding-left: 0;
   list-style: none;
+  width: 100%;
 }
 
 .menu__item {
-  margin-right: 13%;
+  margin-right: 20px;
+}
+
+.menu__item:last-child {
+  margin-left: auto;
 }
 
 .header__link {
