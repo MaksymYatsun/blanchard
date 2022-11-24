@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/choices.min.css" rel="stylesheet">
+  <link href="css/simplebar.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+  <script src="js/tippy.js" defer></script>
+  <title>Blanchard</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container header__container flex">
+        <button class="btn-reset burger">
+          <span></span>
+        </button>
+        <a class="header__logo flex">
+          <img src="img/svg/blanchard.svg" alt="Blanchard logo">
+        </a>
+        <nav class="header__nav flex">
+          <div class="menu-wrap flex">
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="header__link" href="#">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link" href="#">Галерея</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link" href="#">Каталог</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link" href="#">События</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link" href="#">Проекты</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link" href="#">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <a class="login__link flex" href>
+                  <svg class="login__icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z">
+                    </path>
+                  </svg>
+                  <span class="login__link-text">Войти</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container categories__container flex">
+        <ul class="categories__list reset-list">
+          <li class="categories__item">
+            <button class="categories__item-btn js-header-dropdown-btn" data-path="one">
+              <span class="categories__item-heading">Реализм</span>
+              <span class="categories__item-icon"></span>
+            </button>
+            <div class="categories__dropdown js-header-drop" data-target="one">
+              <div class="categories__dropdown-wrap" data-simplebar>
+                <ul class="categories__drop-list reset-list">
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--tintoretto" href>Тинторрето</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--fridrih" href>Фридрих</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--leonardo" href>Леонардо</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--veroccio" href>Верроккьо</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--veroccio" href>Верроккьо</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--veroccio" href>Верроккьо</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <button class="categories__item-btn js-header-dropdown-btn" data-path="two">
+              <span class="categories__item-heading">Импрессионизм</span>
+              <span class="categories__item-icon"></span>
+            </button>
+            <div class="categories__dropdown js-header-drop" data-target="two">
+              <div class="categories__dropdown-wrap" data-simplebar>
+                <ul class="categories__drop-list">
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--monet" href>Моне</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--sisley" href>Сислей</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--manet" href>Мане</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--renoir" href>Ренуар</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <button class="categories__item-btn js-header-dropdown-btn" data-path="three">
+              <span class="categories__item-heading">Постимпрессионизм</span>
+              <span class="categories__item-icon"></span>
+            </button>
+            <div class="categories__dropdown js-header-drop" data-target="three">
+              <div class="categories__dropdown-wrap" data-simplebar>
+                <ul class="categories__drop-list reset-list">
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--van-gogh" href>Ван Гог</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--sesan" href>Сезанн</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--goghen" href>Гоген</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--siora" href>Сёра</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <button class="categories__item-btn js-header-dropdown-btn" data-path="four">
+              <span class="categories__item-heading">Авангард</span>
+              <span class="categories__item-icon"></span>
+            </button>
+            <div class="categories__dropdown js-header-drop" data-target="four">
+              <div class="categories__dropdown-wrap" data-simplebar>
+                <ul class="categories__drop-list reset-list">
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--kandinskiy" href>Кандинский</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--marinetti" href>Маринетти</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--malevych" href>Малевич</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--picasso" href>Пикассо</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <button class="categories__item-btn js-header-dropdown-btn" data-path="five">
+              <span class="categories__item-heading">Футуризм</span>
+              <span class="categories__item-icon"></span>
+            </button>
+            <div class="categories__dropdown js-header-drop" data-target="five">
+              <div class="categories__dropdown-wrap" data-simplebar>
+                <ul class="categories__drop-list reset-list">
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--karra" href>Карра</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--pratella" href>Прателла</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--severini" href>Северини</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--balla" href>Балла</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+          <form class="search__form flex" id="aaa">
+            <button class="search__btn btn-reset"></button>
+            <input class="search__input" type="text" placeholder="Поиск по сайту">
+          </form>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content flex">
+          <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
+          <p class="hero__descr">Мы вынуждены отталкиваться от того, что реализация намеченных плановых
+            заданий
+            создаёт предпосылки для новых предложений</p>
+          <a class="hero__link" href="#">Подписаться на рассылку</a>
+        </div>
+      </div>
+      <div class="slider-wrapper">
+        <div class="js-hero-swiper swiper-container slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide slide-1"></div>
+            <div class="swiper-slide slide slide-2"></div>
+            <div class="swiper-slide slide slide-3"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container about-us__container">
+        <h2 class="section__title">О нас</h2>
+        <p class="about-us__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
+          однозначно определяет каждого участника как способного принимать собственные решения касаемо
+          распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный
+          прототип будущего проекта влечёт за собой процесс внедрения и модернизации модели развития.
+          Повседневная практика показывает, что высокое качество позиционных исследований создаёт
+          необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
+          комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных
+          стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв
+          населения, а значит, должны быть разоблачены.</p>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="container gallery__container">
+        <div class="content-wrap">
+          <div class="gallery-left-elem">
+            <h2 class="gallery__title section__title">Галерея</h2>
+            <div class="gallery-select">
+              <form class="gallery-select__form flex">
+                <label class="gallery-select__label">Фильтр:</label>
+                <select class="choice">
+                  <option value="painting">Живопись</option>
+                  <option value="drawing">Рисунок</option>
+                  <option value="sculpture">Скульптура</option>
+                </select>
+              </form>
+            </div>
+            <form class="gallery-filters__wrapper flex">
+              <label class="gallery-filters__content" for="1800-1899">XIX век
+                <input class="gallery-filters__item--default" id="1800-1899" name="time" type="radio" value="1800-1899">
+                <span class="gallery-filters__item--custom"></span>
+              </label>
+              <label class="gallery-filters__content" for="1900-1999">XX век
+                <input class="gallery-filters__item--default" id="1900-1999" name="time" type="radio" value="1900-1999">
+                <span class="gallery-filters__item--custom"></span>
+              </label>
+              <label class="gallery-filters__content" for="2000-nowadays">Современность
+                <input class="gallery-filters__item--default" id="2000-nowadays" name="time" type="radio"
+                  value="2000-nowadays">
+                <span class="gallery-filters__item--custom"></span>
+              </label>
+            </form>
+          </div>
+          <div class="gallery-swiper">
+            <div class="gallery-navigation">
+              <button class="nav-btn gallery-prev" aria-label="К предыдущему слайду"></button>
+              <div class="gallery-pagination"></div>
+              <button class="nav-btn gallery-next" aria-label="К следующему слайду"></button>
+            </div>
+            <div class="swiper-container slides-container">
+              <div class="swiper-wrapper">
+                <a class="swiper-slide gallery-slide" href="#">
+                  <picture>
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__1.jpg" alt>
+                  </picture>
+                </a>
+                <a class="swiper-slide gallery-slide" href="#">
+                  <picture>
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__2.jpg" alt>
+                  </picture>
+                </a>
+                <a class="swiper-slide gallery-slide" href="#">
+                  <picture>
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__3.jpg" alt>
+                  </picture>
+                </a>
+                <a class="swiper-slide gallery-slide" href="#">
+                  <picture>
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__4.jpg" alt>
+                  </picture>
+                </a>
+                <a class="swiper-slide gallery-slide" href="#">
+                  <picture>
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__5.jpg" alt>
+                  </picture>
+                </a>
+                <a class="swiper-slide gallery-slide" href="#">
+                  <picture>
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__6.jpg" alt>
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <h2 class="section__title catalog__title">Каталог</h2>
+        <p class="section__descr catalog__descr">Акционеры крупнейших компаний, которые представляют собой яркий пример
+          континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
+          этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены
+          на независимые элементы.</p>
+        <div class="catalog__wrap js-tabs-wrap">
+          <div class="catalog__content-wrap">
+            <div class="catalog__painter-info active js-tab-content" data-target="domenico">
+              <picture>
+                <img class="catalog__painer-img" src="img/catalogue/catalogue__xxl.jpg" alt>
+              </picture>
+              <h3 class="catalog__painer-name">Доменико Гирландайо</h3>
+              <span class="catalog__painter-lifespan">2 июня 1448–11 января 1494</span>
+              <p>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+                в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло,
+                со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают
+                знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__painter-info js-tab-content" data-target="empty">
+              <picture>
+                <img class="catalog__painer-img" src="img/catalogue/catalogue__empty/empty__cover__xxl.jpg" alt>
+              </picture>
+              <h3>Что мы о нём знаем?</h3>
+              <p>Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+              <a class="empty-gallery-btn" href="#gallery">В галерею</a>
+            </div>
+          </div>
+          <ul class="catalog__accordion accordion reset-list js-accordion-container">
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">C 1400 по 1499 гг.</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap">
+                  <ul class="accordion__inner-list reset-list">
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Бенедетто ди Биндо</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Бергоньоне, Амброджо</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Биссоло, Франческо</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Больтраффио, Джованни</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Бонсиньори, Франческо</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Боттичини, Рафаэлло</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Брамантино</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Бреа, Людовико</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="domenico">
+                        <span class="link__text">Бьяджо д’Антонио Туччи</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Веккьетта</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Андреа Верроккьо</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn  active" href="#"
+                        data-path="domenico">
+                        <span class="link__text">Доменико Гирландайо</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Беноццо Гоццоли</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Граначчи, Франческо</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Грегорио ди Чекко</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Джованни да Удине</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="domenico">
+                        <span class="link__text">Джованни ди Паоло</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="domenico">
+                        <span class="link__text">Джорджоне</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Парентино, Бернардо</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Пезеллино</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Пьетро Перуджино</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Перуцци, Бальдассаре</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Пизанелло</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Пинтуриккьо</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty">
+                        <span class="link__text">Грегорио ди Чекко</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">C 1500 по 1599 гг.</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg width="274" height="178" viewBox="0 0 274 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac__wrapper flex">
+                    <div class=""></div>
+                    <h3 class="empty-ac__title">Здесь пока пусто</h3>
+                    <p class="empty-ac__descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a class="empty-gallery-btn" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg width="274" height="178" viewBox="0 0 274 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac__wrapper flex">
+                    <div class=""></div>
+                    <h3 class="empty-ac__title">Здесь пока пусто</h3>
+                    <p class="empty-ac__descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a class="empty-gallery-btn" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg width="274" height="178" viewBox="0 0 274 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac__wrapper flex">
+                    <div class=""></div>
+                    <h3 class="empty-ac__title">Здесь пока пусто</h3>
+                    <p class="empty-ac__descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a class="empty-gallery-btn" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg width="274" height="178" viewBox="0 0 274 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac__wrapper flex">
+                    <div class=""></div>
+                    <h3 class="empty-ac__title">Здесь пока пусто</h3>
+                    <p class="empty-ac__descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a class="empty-gallery-btn" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg width="274" height="178" viewBox="0 0 274 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac__wrapper flex">
+                    <div class=""></div>
+                    <h3 class="empty-ac__title">Здесь пока пусто</h3>
+                    <p class="empty-ac__descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a class="empty-gallery-btn" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg width="274" height="178" viewBox="0 0 274 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac__wrapper flex">
+                    <div class=""></div>
+                    <h3 class="empty-ac__title">Здесь пока пусто</h3>
+                    <p class="empty-ac__descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a class="empty-gallery-btn" href="#gallery">В галерею</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="events">
+      <div class="container events__container">
+        <h2 class="section__title">События</h2>
+        <div class="swiper js-events-swiper flex">
+          <div class="swiper-wrapper js-events-swiper">
+            <div class="swiper-slide">
+              <article class="events__article">
+                <picture>
+                  <img class="article__cover" src="img/events/xxl/events__cover__xxl__1.jpg" alt>
+                </picture>
+                <div class="article__wrapper flex">
+                  <span class="article__location">
+                    Музей им. Щусева
+                  </span>
+                  <span class="article__time">
+                    с 20 марта по 30 апреля
+                  </span>
+                  <h3 class="article__title">Книжная гравюра в живом восприятии </h3>
+                  <p class="article__descr">Один из ведущих флорентийских художников Кватроченто, основатель
+                    художественной династии, которую продолжили его брат Давид и сын Ридольфо</p>
+                  <a class="article__link" href="#">Подробнее</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="events__article">
+                <picture>
+                  <img class="article__cover" src="img/events/xxl/events__cover__xxl__2.jpg" alt>
+                </picture>
+                <div class="article__wrapper flex">
+                  <span class="article__location">
+                    ММОМА
+                  </span>
+                  <span class="article__time">
+                    24 марта 19:00
+                  </span>
+                  <h3 class="article__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин. </h3>
+                  <p class="article__descr">Высокий уровень вовлечения представителей целевой аудитории является
+                    чётким доказательством простого факта</p>
+                  <a class="article__link" href="#">Подробнее</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="events__article">
+                <picture>
+                  <img class="article__cover" src="img/events/xxl/events__cover__xxl__3.jpg" alt>
+                </picture>
+                <div class="article__wrapper flex">
+                  <span class="article__location">
+                    Еврейский музей
+                  </span>
+                  <span class="article__time">
+                    с 31 марта по 21 апреля
+                  </span>
+                  <h3 class="article__title">Выставка «Формация 2020» </h3>
+                  <p class="article__descr">Идейные соображения высшего порядка, а также современная методология
+                    разработки играет важную роль в формировании глубокомысленных рассуждений</p>
+                  <a class="article__link" href="#">Подробнее</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="events__article flex">
+                <picture>
+                  <img class="article__cover" src="img/events/xxl/events__cover__xxl__4.jpg" alt>
+                </picture>
+                <div class="article__wrapper flex">
+                  <span class="article__location">
+                    ММАМ
+                  </span>
+                  <span class="article__time">
+                    с 8 апреля по 20 мая
+                  </span>
+                  <h3 class="article__title">Джон Винзор. Фотографии из серии «Метафора» </h3>
+                  <p class="article__descr">Один из ведущих флорентийских художников Кватроченто, основатель
+                    художественной династии, которую продолжили его брат Давид и сын Ридольфо</p>
+                  <a class="article__link" href="#">Подробнее</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="events__article flex">
+                <picture>
+                  <img class="article__cover" src="img/events/xxl/events__cover__xxl__5.jpg" alt>
+                </picture>
+                <div class="article__wrapper flex">
+                  <span class="article__location">
+                    Третьяковка на Крымском валу
+                  </span>
+                  <span class="article__time">
+                    с 30 марта по 30 апреля
+                  </span>
+                  <h3 class="article__title">XXIV Международная биеннале молодого искусства </h3>
+                  <p class="article__descr">Внезапно, реплицированные с зарубежных источников, современные
+                    исследования</p>
+                  <a class="article__link" href="#">Подробнее</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="events__navigation navigation">
+        <button class="events-prev btn-reset">
+          <svg class="events-prev__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 7.09305e-06C11.1929 8.90364e-06 2.54046e-06 11.1929 4.35104e-06 25C6.16163e-06 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 5.28247e-06 25 7.09305e-06Z"
+              fill="#ECECEC" stroke="9D5CD0"></path>
+            <path d="M26.6667 16.6667L18.3333 25L26.6667 33.3333" stroke="black"></path>
+          </svg>
+        </button>
+        <button class="events-next btn-reset" tabindex="1">
+          <svg class="events-next__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="test"
+              d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
+              fill="#ECECEC" stroke="9D5CD0"></path>
+            <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="projcts">
+      <div class="container projects__container">
+        <h2 class="section__title projects__title">Проекты</h2>
+        <p class="section__descr projects__descr">Предварительные выводы: постоянное информационно-пропагандистское
+          обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи.
+          А ещё независимые государства смешаны с не уникальными данными до степени совершённой неузнаваемости,
+          из-за чего возрастает
+          их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
+          <button class="tooltip btn-reset"
+            data-tippy-content="Предварительные выводы: постоянное информационно-пропагандистское"></button>
+          обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых
+          решений.
+          И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
+          <button class="tooltip btn-reset" data-tippy-content="обеспечение нашей"></button>
+          исключительно в разрезе
+          маркетинговых и финансовых
+          <button class="tooltip btn-reset" data-theme~="tomato"
+            data-tippy-content="деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи."></button>
+          предпосылок. Банальные, но неопровержимые выводы, а также представители современных
+          социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны
+          с не уникальными данными до степени совершённой неузнаваемости. Подробнее: <a class="proects__link"
+            href>blanchard-art.ru/projects</a>
+        </p>
+        <h3 class="projects__subtitle">Партнёры проектов:</h3>
+        <div class="projects__swiper">
+          <div class="swiper js-projects-swiper">
+            <div class="swiper-wrapper js-projects-swiper__wrapper">
+              <div class="swiper-slide projects-slide flex">
+                <img src="img/svg/partners/freelands__foundations.svg" alt>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <img src="img/svg/partners/institute__of__art.svg" alt>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <img src="img/svg/partners/workhouse.svg" alt>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <img src="img/svg/partners/1849.svg" alt>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <img src="img/svg/partners/hiscox.svg" alt>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <img src="img/svg/partners/camden.svg" alt>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <img src="img/svg/partners/stassen.svg" alt>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <img src="img/svg/partners/watts__gallery.svg" alt>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <img src="img/svg/partners/ecole__superieure.svg" alt>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects__navigation navigation">
+          <button class="projects-prev btn-reset">
+            <svg class="projects-prev__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25 7.09305e-06C11.1929 8.90364e-06 2.54046e-06 11.1929 4.35104e-06 25C6.16163e-06 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 5.28247e-06 25 7.09305e-06Z"
+                fill="#ECECEC" stroke="9D5CD0"></path>
+              <path d="M26.6667 16.6667L18.3333 25L26.6667 33.3333" stroke="black"></path>
+            </svg>
+          </button>
+          <button class="projects-next btn-reset">
+            <svg class="projects-next__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="test"
+                d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
+                fill="#ECECEC" stroke="9D5CD0"></path>
+              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="contacts contacts__section">
+      <div class="container contacts__container">
+        <div class="contacts__top flex">
+          <div class="contacts__adress">
+            <h4 class="section__subtitle contacts__subtitle">Шоурум №4</h4>
+            <p class="adress">Леонтьевский переулок, дом 5/1</p>
+          </div>
+          <form class="cotacts__form flex" action>
+            <input class="cotacts__form-name" placeholder="Имя*" type="text">
+            <input class="cotacts__form-phone" placeholder="Номер телефона*" type="text">
+            <button class="cotacts__form-call btn-reset">Заказать обратный звонок</button>
+          </form>
+          <div class="contacts__message">
+            <h4 class="section__subtitle contacts__message-subtitle">Связаться в один клик</h4>
+            <a class="contacts__message-link" href>
+              <img src="img/svg/whatsapp.svg" alt>
+            </a>
+            <a class="contacts__message-link" href>
+              <img src="img/svg/tellegram.svg" alt>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__bottom">
+        <div class="contacts__map">
+          <div class="contacts__map-wrap" id="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container flex">
+      <a class="footer__logo">
+        <img src="img/svg/blanchard.svg" alt="Blanchard logo">
+      </a>
+      <div class="footer__social">
+        <a class="vk" href>
+          <img src="img/svg/vk.svg" alt>
+        </a>
+        <a class="odnoklasniki" href>
+          <img src="img/svg/ok.svg" alt>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/accordion.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
