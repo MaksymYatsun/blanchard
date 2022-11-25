@@ -123,13 +123,13 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     breakpoints: {
-      441: {
+      768: {
         slidesPerView: 2,
         spaceBetween: 30,
         slidesPerGroup: 2
       },
 
-      1200: {
+      1024: {
         slidesPerView: 3,
         spaceBetween: 50,
         slidesPerGroup: 3
@@ -245,11 +245,11 @@ const eventsSwiper = new Swiper('.js-events-swiper', {
       slidesPerView: 1,
       spaceBetween: 20
     },
-    640: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 30
     },
-    1025: {
+    1024: {
       slidesPerView: 3,
       spaceBetween: 50
     }

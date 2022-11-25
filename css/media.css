@@ -5,11 +5,15 @@
   }
 
   .header__nav {
-    width: 0;
+    position: absolute;
   }
 
   .search {
     order: 1;
+  }
+
+  .form-container {
+    display: block;
   }
 
   .nav {
@@ -141,8 +145,13 @@
     margin-right: 0;
   }
 
+  .header__link {
+    font-size: var(--fs-24px);
+  }
+
   .login__link {
     border-radius: 100px;
+    width: 8.6115em;
     padding: 10px 50px 10px 50px;
     border: 1px solid var(--violet-middle);
   }
@@ -213,6 +222,10 @@
   }
 }
 
+.search {
+  display: none;
+}
+
 /* plugins media*/
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
 
@@ -265,6 +278,10 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    overflow: hidden;
+  }
+
   .gallery-left-elem,
   .gallery-swiper {
     width: 100%;
@@ -279,6 +296,30 @@
   .gallery-select {
     max-width: 300px;
   }
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero__content {
+    align-items: center;
+  }
+
+  .hero__title {
+    max-width: unset;
+    font-size: var(--fs-32px);
+    text-align: center;
+  }
+
+  .hero__descr {
+    max-width: 80%;
+    text-align: center;
+  }
+
+
 }
 
 @media (max-width: 440px) {
