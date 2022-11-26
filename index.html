@@ -77,7 +77,8 @@
           </div>
         </nav>
         <div class="form-container">
-          <button class="form-btn__open btn-reset"><svg width="25" height="25" viewBox="0 0 30 29" fill="none"
+          <button class="form-btn__open btn-reset">
+            <svg class="form-btn__open-icon" width="25" height="25" viewBox="0 0 30 29" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <rect width="9.15446" height="2.28862"
                 transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"></rect>
@@ -87,7 +88,8 @@
             </svg>
           </button>
           <form class="form" action="/">
-            <button class="form-btn__submit btn-reset"><svg width="24" height="24" viewBox="0 0 30 29" fill="none"
+            <button class="form-btn__submit btn-reset">
+              <svg width="24" height="24" viewBox="0 0 30 29" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="9.15446" height="2.28862"
                   transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"></rect>
@@ -97,7 +99,8 @@
               </svg>
             </button>
             <input class="form__input input__reset" type="text">
-            <button class="form-close btn-reset" type="button"><svg width="24" height="24" viewBox="0 0 24 24"
+            <button class="form-close btn-reset" type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="8.9541" y="7.30432" width="11.6645" height="2.33291" transform="rotate(45 8.9541 7.30432)"
                   fill="#CACACA"></rect>
@@ -251,7 +254,7 @@
                 fill="white"></path>
             </svg>
           </button>
-          <input class="search-bottom__input input__reset" type="text">
+          <input class="search-bottom__input input__reset" type="text" placeholder="Поиск по сайту">
         </form>
       </div>
     </div>
@@ -313,7 +316,7 @@
                 <span class="gallery-filters__item--custom"></span>
               </label>
               <label class="gallery-filters__content" for="1900-1999">XX век
-                <input class="gallery-filters__item--default" id="1900-1999" name="time" type="radio" value="1900-1999">
+                <input class="gallery-filters__item--default" id="1900-1999" name="time" type="radio" value="1900-1999" checked>
                 <span class="gallery-filters__item--custom"></span>
               </label>
               <label class="gallery-filters__content" for="2000-nowadays">Современность
@@ -770,10 +773,10 @@
     </section>
     <section class="events">
       <div class="container events__container">
-        <h2 class="section__title">События</h2>
+        <h2 class="section__title events__title">События</h2>
         <div class="swiper js-events-swiper flex">
           <div class="swiper-wrapper js-events-swiper">
-            <div class="swiper-slide flex">
+            <div class="swiper-slide slide-1 active flex">
               <article class="events__article flex">
                 <picture>
                   <source srcset="img/events/xs/events__cover__xs__1.jpg" media="(max-width: 320px)">
@@ -788,14 +791,14 @@
                   <span class="article__time">
                     с 20 марта по 30 апреля
                   </span>
-                  <h3 class="article__title">Книжная гравюра в живом восприятии </h3>
+                  <h3 class="article__title">Книжная гравюра в живом  восприятии </h3>
                   <p class="article__descr">Один из ведущих флорентийских художников Кватроченто, основатель
                     художественной династии, которую продолжили его брат Давид и сын Ридольфо</p>
                   <a class="article__link" href="#">Подробнее</a>
                 </div>
               </article>
             </div>
-            <div class="swiper-slide flex">
+            <div class="swiper-slide slide-2 flex">
               <article class="events__article flex">
                 <picture>
                   <source srcset="img/events/xs/events__cover__xs__2.jpg" media="(max-width: 320px)">
@@ -817,7 +820,7 @@
                 </div>
               </article>
             </div>
-            <div class="swiper-slide flex">
+            <div class="swiper-slide slide-3 flex">
               <article class="events__article flex">
                 <picture>
                   <source srcset="img/events/xs/events__cover__xs__3.jpg" media="(max-width: 320px)">
@@ -839,7 +842,7 @@
                 </div>
               </article>
             </div>
-            <div class="swiper-slide flex">
+            <div class="swiper-slide slide-4 flex">
               <article class="events__article flex">
                 <picture>
                   <source srcset="img/events/xs/events__cover__xs__4.jpg" media="(max-width: 320px)">
@@ -861,7 +864,7 @@
                 </div>
               </article>
             </div>
-            <div class="swiper-slide flex">
+            <div class="swiper-slide slide-5 flex">
               <article class="events__article flex">
                 <picture>
                   <source srcset="img/events/xs/events__cover__xs__5.jpg" media="(max-width: 320px)">
@@ -884,6 +887,7 @@
               </article>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <div class="events__navigation navigation">
@@ -1023,10 +1027,10 @@
       </a>
       <div class="footer__social">
         <a class="vk" href>
-          <img src="img/svg/vk.svg" alt>
+          <img class="vk-img" src="img/svg/vk.svg" alt>
         </a>
         <a class="odnoklasniki" href>
-          <img src="img/svg/ok.svg" alt>
+          <img class="ok-img" src="img/svg/ok.svg" alt>
         </a>
       </div>
     </div>

@@ -120,21 +120,19 @@ h4 {
 .header__top {
   padding: 30px 0 30px 0;
   background: #000;
-  justify-content: space-between;
   overflow: hidden;
 }
 
 .header__container {
-  justify-content: space-between;
   position: relative;
 }
 
-.header__nav {
-  width: 65%;
+.header__logo {
+  margin-right: 11.2%;
 }
 
-.header__logo {
-  margin-right: 20px;
+.header__nav {
+  width: 100%;
 }
 
 .menu-wrap {
@@ -151,8 +149,8 @@ h4 {
   width: 100%;
 }
 
-.menu__item {
-  margin-right: 20px;
+.menu__item:not(:last-child) {
+  margin-right: 60px;
 }
 
 .menu__item:last-child {
@@ -241,8 +239,8 @@ h4 {
 
 .header__bottom {
   background: rgba(0, 0, 0, 0.5);
-  padding-top: 21px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 22px;
 }
 
 .categories__container {
@@ -252,7 +250,7 @@ h4 {
 .categories__list {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 65.7%;
   justify-content: space-between;
 }
 
@@ -566,11 +564,19 @@ h4 {
 
 .search-bottom__form {
   position: absolute;
-  left: -18%;
+  top: -1%;
+  left: -15%;
 }
 
 .search-bottom {
+  width: 13.7em;
+  padding-top: 2px;
   border-bottom: 1px solid var(--white);
+}
+
+.search-bottom__input::placeholder {
+  color: var(--white);
+  font-size: var(--fs-18px);
 }
 
 /*_______________________________________________________________________________________________hero_____________________________________________________*/
@@ -972,8 +978,8 @@ h4 {
 }
 
 .gallery-filters__content .gallery-filters__item--custom::after {
-  top: 4px;
-  left: 4px;
+  top: 3px;
+  left: 3px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -1402,7 +1408,7 @@ h4 {
 .events-next {
   position: absolute;
   z-index: 100;
-  top: 50%;
+  top: 49%;
   border-radius: 50%;
 }
 
@@ -1566,15 +1572,17 @@ h4 {
 .projects-next {
   position: absolute;
   z-index: 100;
-}
-
-.projects-prev {
-  top: 72%;
+  top: 73.5%;
 }
 
 .projects-next {
-  top: 72%;
-  right: 0;
+  right: 50px;
+}
+
+.projects-prev__icon,
+.projects-next__icon {
+  width: 30px;
+  height: 30px;
 }
 
 /*contacts*/
@@ -1588,8 +1596,8 @@ h4 {
 }
 
 .contacts__container {
-  padding-top: 38px;
-  padding-bottom: 30px;
+  padding-top: 33px;
+  padding-bottom: 32px;
 }
 
 .contacts__top {
@@ -1601,8 +1609,8 @@ h4 {
 }
 
 .contacts__adress {
-  padding-top: 5px;
-  margin-right: 20px;
+  padding-top: 11px;
+  margin-right: 29px;
 }
 
 .cotacts__form {
@@ -1612,9 +1620,8 @@ h4 {
 
 .cotacts__form-name,
 .cotacts__form-phone {
-  padding: 15px;
+  padding: 15px 15px 15px 15px;
   width: 15em;
-  height: 20px;
   border-radius: 100px;
   margin-right: 20px;
   border: 1px solid var(--grey);
@@ -1625,14 +1632,23 @@ h4 {
   font-size: var(--fs-18px);
   color: var(--violet-middle);
   line-height: 25px;
-  padding: 15px;
-  width: 19em;
+  padding: 10px 15px 10px 15px;
+  width: 18.3em;
   border-radius: 100px;
   border: 2px solid #9d5cd0;
 }
 
+.contacts__message {
+  padding-top: 5px;
+}
+
 .contacts__message-link:not(:last-child) {
   margin-right: 15px;
+}
+
+.contacts__message-subtitle {
+  letter-spacing: -0.025em;
+  margin-bottom: 5px;
 }
 
 .contacts__bottom {
@@ -1676,5 +1692,5 @@ h4 {
 }
 
 .vk {
-  margin-right: 20px;
+  margin-right: 16px;
 }
