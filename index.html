@@ -5,15 +5,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="libs/swiper-bundle.min.js" defer></script>
+  <script src="libs/simplebar.min.js" defer></script>
+  <script src="libs/choices.min.js" defer></script>
+  <script src="libs/accordion.min.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" defer></script>
+  <script src="https://unpkg.com/popper.js@1" defer></script>
+  <script src="https://unpkg.com/tippy.js@5" defer></script>
+  <script src="js/events-swiper.js" defer></script>
+  <script src="js/projects-swiper.js"></script>
+  <script src="js/tippy.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/choice.js" defer></script>
+  <script src="js/gallery-swiper.js" defer></script>
+  <script src="js/events-swiper.js" defer></script>
+  <script src="js/projects-swiper.js" defer></script>
+  <script src="js/burger.js" defer></script>
+  <script src="js/dropdown.js" defer></script>
+  <script src="js/accordion.js" defer></script>
+  <script src="js/msps.js" defer></script>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/swiper-bundle.min.css" rel="stylesheet">
   <link href="css/choices.min.css" rel="stylesheet">
   <link href="css/simplebar.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/media.css" rel="stylesheet">
-  <script src="js/tippy.js" defer></script>
-  <script src="js/search.js" defer></script>
-  <title>Blanchard</title>
 </head>
 
 <body>
@@ -64,30 +80,30 @@
           <button class="form-btn__open btn-reset"><svg width="25" height="25" viewBox="0 0 30 29" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <rect width="9.15446" height="2.28862"
-                transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white" />
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"></rect>
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
-                fill="white" />
+                fill="white"></path>
             </svg>
           </button>
-          <form action="/" class="form">
+          <form class="form" action="/">
             <button class="form-btn__submit btn-reset"><svg width="24" height="24" viewBox="0 0 30 29" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="9.15446" height="2.28862"
-                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white" />
+                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"></rect>
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
-                  fill="white" />
+                  fill="white"></path>
               </svg>
             </button>
             <input class="form__input input__reset" type="text">
             <button class="form-close btn-reset" type="button"><svg width="24" height="24" viewBox="0 0 24 24"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="8.9541" y="7.30432" width="11.6645" height="2.33291" transform="rotate(45 8.9541 7.30432)"
-                  fill="#CACACA" />
+                  fill="#CACACA"></rect>
                 <rect x="7.30469" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30469 15.5524)"
-                  fill="#CACACA" />
-                <circle cx="12" cy="12" r="11" stroke="#CACACA" stroke-width="2" />
+                  fill="#CACACA"></rect>
+                <circle cx="12" cy="12" r="11" stroke="#CACACA" stroke-width="2"></circle>
               </svg>
             </button>
           </form>
@@ -224,15 +240,15 @@
             </div>
           </li>
         </ul>
-        <form action="/" class="search-bottom">
+        <form class="search-bottom" action="/">
           <button class="search-bottom__form btn-reset" tabindex="-1">
             <svg width="24" height="24" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg"
               tabindex="-1">
               <rect width="9.15446" height="2.28862"
-                transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white" />
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"></rect>
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
-                fill="white" />
+                fill="white"></path>
             </svg>
           </button>
           <input class="search-bottom__input input__reset" type="text">
@@ -1015,15 +1031,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/simplebar.min.js"></script>
-  <script src="js/choices.min.js"></script>
-  <script src="js/accordion.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>
-  <script src="https://unpkg.com/popper.js@1"></script>
-  <script src="https://unpkg.com/tippy.js@5"></script>
-  <script src="js/index.js"></script>
 </body>
 
 </html>
