@@ -123,13 +123,13 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     breakpoints: {
-      768: {
+      769: {
         slidesPerView: 2,
         spaceBetween: 30,
         slidesPerGroup: 2
       },
 
-      1024: {
+      1025: {
         slidesPerView: 3,
         spaceBetween: 50,
         slidesPerGroup: 3

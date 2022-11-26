@@ -231,6 +231,18 @@
 
 @media (max-width: 1024px) {
 
+  .hero-slide-1 {
+    background-image: url(../img/hero-swiper/xl/hero-swiper__bg__xl__1.jpg);
+  }
+
+  .hero-slide-2 {
+    background-image: url(../img/hero-swiper/xl/hero-swiper__bg__xl__2.jpg);
+  }
+
+  .hero-slide-3 {
+    background-image: url(../img/hero-swiper/xl/hero-swiper__bg__xl__3.jpg);
+  }
+
   .about-us__descr {
     width: 100%;
   }
@@ -241,6 +253,10 @@
 
   .projects__descr {
     width: 100%;
+  }
+
+  .gallery {
+    background-image: url(../img/gallery/gallery__background__xl.jpg);
   }
 
   .gallery-slide::before {
@@ -280,6 +296,22 @@
 @media (max-width: 768px) {
   .header {
     overflow: hidden;
+  }
+
+  .hero-slide-1 {
+    background-image: url(../img/hero-swiper/md/hero-swiper__bg__md__1.jpg);
+  }
+
+  .hero-slide-2 {
+    background-image: url(../img/hero-swiper/md/hero-swiper__bg__md__2.jpg);
+  }
+
+  .hero-slide-3 {
+    background-image: url(../img/hero-swiper/md/hero-swiper__bg__md__3.jpg);
+  }
+
+  .gallery {
+    background-image: url(../img/gallery/gallery__background__md.jpg);
   }
 
   .gallery-left-elem,
@@ -340,5 +372,23 @@
 
   .gallery-slide::before {
     padding-top: calc(110% - 6px);
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-slide-1 {
+    background-image: url(../img/hero-swiper/xs/hero-swiper__bg__xs__1.jpg);
+  }
+
+  .hero-slide-2 {
+    background-image: url(../img/hero-swiper/xs/hero-swiper__bg__xs__2.jpg);
+  }
+
+  .hero-slide-3 {
+    background-image: url(../img/hero-swiper/xs/hero-swiper__bg__xs__3.jpg);
+  }
+
+  .gallery {
+    background-image: url(../img/gallery/gallery__background__xs.jpg);
   }
 }

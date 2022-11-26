@@ -640,19 +640,19 @@ h4 {
   background-color: lightgray;
 }
 
-.slide-1 {
+.hero-slide-1 {
   height: 800px;
-  background-image: url(../img/swiper/xxl/swiper__bg__xxl__1.jpg);
+  background-image: url(../img/hero-swiper/xxl/hero-swiper__bg__xxl__1.jpg);
 }
 
-.slide-2 {
+.hero-slide-2 {
   height: 800px;
-  background-image: url(../img/swiper/xxl/swiper__bg__xxl__2.jpg);
+  background-image: url(../img/hero-swiper/xxl/hero-swiper__bg__xxl__2.jpg);
 }
 
-.slide-3 {
+.hero-slide-3 {
   height: 800px;
-  background-image: url(../img/swiper/xxl/swiper__bg__xxl__3.jpg);
+  background-image: url(../img/hero-swiper/xxl/hero-swiper__bg__xxl__3.jpg);
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet {
