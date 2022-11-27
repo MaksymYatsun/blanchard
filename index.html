@@ -40,11 +40,11 @@
           <span></span>
         </button>
         <a class="header__logo flex">
-          <img src="img/svg/blanchard.svg" alt="Blanchard logo">
+          <img class="header__logo-img" src="img/svg/blanchard.svg" alt="Blanchard logo">
         </a>
         <nav class="header__nav flex">
           <div class="menu-wrap flex">
-            <ul class="menu">
+            <ul class="menu flex">
               <li class="menu__item">
                 <a class="header__link" href="#">О нас</a>
               </li>
@@ -283,7 +283,7 @@
     </section>
     <section class="about-us">
       <div class="container about-us__container">
-        <h2 class="section__title">О нас</h2>
+        <h2 class="section__title about-us__title">О нас</h2>
         <p class="about-us__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
           однозначно определяет каждого участника как способного принимать собственные решения касаемо
           распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный
@@ -1000,15 +1000,15 @@
           <form class="cotacts__form flex" action>
             <input class="cotacts__form-name" placeholder="Имя*" type="text">
             <input class="cotacts__form-phone" placeholder="Номер телефона*" type="text">
-            <button class="cotacts__form-call btn-reset">Заказать обратный звонок</button>
+            <button class="cotacts__form-call btn-reset">Заказать <span class="contacts__form-call--hiden">обратный звонок</span></button>
           </form>
           <div class="contacts__message">
             <h4 class="section__subtitle contacts__message-subtitle">Связаться в один клик</h4>
             <a class="contacts__message-link" href>
-              <img src="img/svg/whatsapp.svg" alt>
+              <img class="contacts__message-img" src="img/svg/whatsapp.svg" alt>
             </a>
             <a class="contacts__message-link" href>
-              <img src="img/svg/tellegram.svg" alt>
+              <img class="contacts__message-img" src="img/svg/tellegram.svg" alt>
             </a>
           </div>
         </div>
@@ -1023,7 +1023,7 @@
   <footer class="footer">
     <div class="container footer__container flex">
       <a class="footer__logo">
-        <img src="img/svg/blanchard.svg" alt="Blanchard logo">
+        <img class="footer__logo-img" src="img/svg/blanchard.svg" alt="Blanchard logo">
       </a>
       <div class="footer__social">
         <a class="vk" href>
