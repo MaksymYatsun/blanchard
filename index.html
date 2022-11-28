@@ -9,6 +9,8 @@
   <script src="libs/simplebar.min.js" defer></script>
   <script src="libs/choices.min.js" defer></script>
   <script src="libs/accordion.min.js" defer></script>
+  <script src="libs/just-validate.min.js" defer></script>
+  <script src="libs/inputmask.min.js" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" defer></script>
   <script src="https://unpkg.com/popper.js@1" defer></script>
   <script src="https://unpkg.com/tippy.js@5" defer></script>
@@ -24,6 +26,7 @@
   <script src="js/dropdown.js" defer></script>
   <script src="js/accordion.js" defer></script>
   <script src="js/msps.js" defer></script>
+  <script src="js/validation.js" defer></script>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/swiper-bundle.min.css" rel="stylesheet">
   <link href="css/choices.min.css" rel="stylesheet">
@@ -89,8 +92,7 @@
           </button>
           <form class="form" action="/">
             <button class="form-btn__submit btn-reset">
-              <svg width="24" height="24" viewBox="0 0 30 29" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="9.15446" height="2.28862"
                   transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"></rect>
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -100,8 +102,7 @@
             </button>
             <input class="form__input input__reset" type="text">
             <button class="form-close btn-reset" type="button">
-              <svg width="24" height="24" viewBox="0 0 24 24"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="8.9541" y="7.30432" width="11.6645" height="2.33291" transform="rotate(45 8.9541 7.30432)"
                   fill="#CACACA"></rect>
                 <rect x="7.30469" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30469 15.5524)"
@@ -316,7 +317,8 @@
                 <span class="gallery-filters__item--custom"></span>
               </label>
               <label class="gallery-filters__content" for="1900-1999">XX век
-                <input class="gallery-filters__item--default" id="1900-1999" name="time" type="radio" value="1900-1999" checked>
+                <input class="gallery-filters__item--default" id="1900-1999" name="time" type="radio" value="1900-1999"
+                  checked>
                 <span class="gallery-filters__item--custom"></span>
               </label>
               <label class="gallery-filters__content" for="2000-nowadays">Современность
@@ -775,7 +777,7 @@
       <div class="container events__container">
         <h2 class="section__title events__title">События</h2>
         <div class="swiper js-events-swiper flex">
-          <div class="swiper-wrapper js-events-swiper">
+          <div class="swiper-wrapper js-events-swiper-wrapper">
             <div class="swiper-slide slide-1 active flex">
               <article class="events__article flex">
                 <picture>
@@ -791,7 +793,7 @@
                   <span class="article__time">
                     с 20 марта по 30 апреля
                   </span>
-                  <h3 class="article__title">Книжная гравюра в живом  восприятии </h3>
+                  <h3 class="article__title">Книжная гравюра в живом восприятии </h3>
                   <p class="article__descr">Один из ведущих флорентийских художников Кватроченто, основатель
                     художественной династии, которую продолжили его брат Давид и сын Ридольфо</p>
                   <a class="article__link" href="#">Подробнее</a>
@@ -889,26 +891,26 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-      </div>
-      <div class="events__navigation navigation">
-        <button class="events-prev btn-reset">
-          <svg class="events-prev__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M25 7.09305e-06C11.1929 8.90364e-06 2.54046e-06 11.1929 4.35104e-06 25C6.16163e-06 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 5.28247e-06 25 7.09305e-06Z"
-              fill="#ECECEC" stroke="9D5CD0"></path>
-            <path d="M26.6667 16.6667L18.3333 25L26.6667 33.3333" stroke="black"></path>
-          </svg>
-        </button>
-        <button class="events-next btn-reset" tabindex="1">
-          <svg class="events-next__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path class="test"
-              d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
-              fill="#ECECEC" stroke="9D5CD0"></path>
-            <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"></path>
-          </svg>
-        </button>
+        <div class="events__navigation navigation">
+          <button class="events-prev btn-reset">
+            <svg class="events-prev__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25 7.09305e-06C11.1929 8.90364e-06 2.54046e-06 11.1929 4.35104e-06 25C6.16163e-06 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 5.28247e-06 25 7.09305e-06Z"
+                fill="#ECECEC" stroke="9D5CD0"></path>
+              <path d="M26.6667 16.6667L18.3333 25L26.6667 33.3333" stroke="black"></path>
+            </svg>
+          </button>
+          <button class="events-next btn-reset" tabindex="1">
+            <svg class="events-next__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="test"
+                d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
+                fill="#ECECEC" stroke="9D5CD0"></path>
+              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
     <section class="projcts">
@@ -939,54 +941,72 @@
           <div class="swiper js-projects-swiper">
             <div class="swiper-wrapper js-projects-swiper__wrapper">
               <div class="swiper-slide projects-slide flex">
-                <img class="projects-slide-img" src="img/svg/partners/freelands__foundations.svg" alt>
+                <a class="projects-link" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/freelands__foundations.svg" alt>
+                </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <img class="projects-slide-img" src="img/svg/partners/institute__of__art.svg" alt>
+                <a class="projects-link" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/institute__of__art.svg" alt>
+                </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <img class="projects-slide-img" src="img/svg/partners/workhouse.svg" alt>
+                <a class="projects-link" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/workhouse.svg" alt>
+                </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <img class="projects-slide-img" src="img/svg/partners/1849.svg" alt>
+                <a class="projects-link" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/1849.svg" alt>
+                </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <img class="projects-slide-img" src="img/svg/partners/hiscox.svg" alt>
+                <a class="projects-link" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/hiscox.svg" alt>
+                </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <img class="projects-slide-img" src="img/svg/partners/camden.svg" alt>
+                <a class="projects-link" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/camden.svg" alt>
+                </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <img class="projects-slide-img" src="img/svg/partners/stassen.svg" alt>
+                <a class="projects-link" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/stassen.svg" alt>
+                </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <img class="projects-slide-img" src="img/svg/partners/watts__gallery.svg" alt>
+                <a class="projects-link" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/watts__gallery.svg" alt>
+                </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <img class="projects-slide-img" src="img/svg/partners/ecole__superieure.svg" alt>
+                <a class="projects-link" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/ecole__superieure.svg" alt>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="projects__navigation navigation">
-          <button class="projects-prev btn-reset">
-            <svg class="projects-prev__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M25 7.09305e-06C11.1929 8.90364e-06 2.54046e-06 11.1929 4.35104e-06 25C6.16163e-06 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 5.28247e-06 25 7.09305e-06Z"
-                fill="#ECECEC" stroke="9D5CD0"></path>
-              <path d="M26.6667 16.6667L18.3333 25L26.6667 33.3333" stroke="black"></path>
-            </svg>
-          </button>
-          <button class="projects-next btn-reset">
-            <svg class="projects-next__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path class="test"
-                d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
-                fill="#ECECEC" stroke="9D5CD0"></path>
-              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"></path>
-            </svg>
-          </button>
+          <div class="projects__navigation navigation">
+            <button class="projects-prev btn-reset">
+              <svg class="projects-prev__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25 7.09305e-06C11.1929 8.90364e-06 2.54046e-06 11.1929 4.35104e-06 25C6.16163e-06 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 5.28247e-06 25 7.09305e-06Z"
+                  fill="#ECECEC" stroke="9D5CD0"></path>
+                <path d="M26.6667 16.6667L18.3333 25L26.6667 33.3333" stroke="black"></path>
+              </svg>
+            </button>
+            <button class="projects-next btn-reset">
+              <svg class="projects-next__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="test"
+                  d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
+                  fill="#ECECEC" stroke="9D5CD0"></path>
+                <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -995,12 +1015,17 @@
         <div class="contacts__top flex">
           <div class="contacts__adress">
             <h4 class="section__subtitle contacts__subtitle">Шоурум №4</h4>
-            <p class="adress">Леонтьевский переулок, дом 5/1</p>
+            <address class="adress">Леонтьевский переулок, дом 5/1</address>
           </div>
-          <form class="cotacts__form flex" action>
-            <input class="cotacts__form-name" placeholder="Имя*" type="text">
-            <input class="cotacts__form-phone" placeholder="Номер телефона*" type="text">
-            <button class="cotacts__form-call btn-reset">Заказать <span class="contacts__form-call--hiden">обратный звонок</span></button>
+          <form class="cotacts__form flex" action="">
+            <div class="name__container">
+              <input class="cotacts__form-name name" placeholder="Имя*" type="name" name="name">
+            </div>
+            <div class="tel__container">
+              <input class="cotacts__form-phone tel" placeholder="Номер телефона*" type="tel" name="tel">
+            </div>
+            <button class="cotacts__form-call btn-reset">Заказать <span class="contacts__form-call--hiden">обратный
+                звонок</span></button>
           </form>
           <div class="contacts__message">
             <h4 class="section__subtitle contacts__message-subtitle">Связаться в один клик</h4>

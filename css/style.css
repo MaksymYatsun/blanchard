@@ -574,6 +574,15 @@ h4 {
   border-bottom: 1px solid var(--white);
 }
 
+.search-bottom:focus,
+.search-bottom:hover {
+  border-color: var(--violet-dark);
+}
+
+.search-bottom:active {
+  border-bottom: var(--violet-dark);
+}
+
 .search-bottom__input::placeholder {
   color: var(--white);
   font-size: var(--fs-18px);
@@ -613,7 +622,8 @@ h4 {
 }
 
 .hero__link {
-  padding: 23px 22.5px;
+  display: inline-block;
+  padding: 20px 20px;
   color: var(--white);
   font-size: var(--fs-18px);
   font-weight: 700;
@@ -621,8 +631,23 @@ h4 {
   letter-spacing: 0.023em;
   background-color: var(--primary-purple);
   border-radius: 100px;
+  border: 3px solid var(--primary-purple);
   max-width: 15em;
   text-align: center;
+}
+
+.hero__link:focus:not(:active) {
+  outline: 2px solid var(--secondary-purple);
+  border-color: var(--white);
+}
+
+.hero__link:hover {
+  border-color: var(--violet-ultra-light);
+}
+
+.hero__link:active {
+  border-color: var(--violet-ultra-light);
+  background-color: var(--violet-dark);
 }
 
 .slider-wrapper {
@@ -744,16 +769,22 @@ h4 {
   border-radius: 6px;
 }
 
+.is-open .choices__inner {
+  border-radius: 6px;
+}
+
 .choices__inner {
   padding: 5px 7.5px 7.5px 10px;
-  background: none;
+  background: black;
+  border-radius: 6px;
   min-height: auto;
-  width: 95%;
+  width: 94.5%;
   border: none;
 }
 
 .choices__item {
   font-size: initial;
+  background: black;
 }
 
 .choices__item--choice {
@@ -776,7 +807,8 @@ h4 {
 
 .choices__list--dropdown,
 .choices__list[aria-expanded] {
-  background: none;
+  background: black;
+  margin-top: 0;
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted,
@@ -1395,39 +1427,17 @@ h4 {
 }
 
 /*events*/
-.events {
+.events__container {
   position: relative;
 }
 
-.events__container {
-  padding-top: 33px;
-  padding-bottom: 78px;
+.js-events-swiper {
+  flex-direction: column;
+  position: relative;
 }
 
-.events-prev,
-.events-next {
-  position: absolute;
-  z-index: 100;
-  top: 49%;
-  border-radius: 50%;
-}
-
-.events-prev {
-  left: 7%;
-}
-
-.events-next {
-  right: 7%;
-}
-
-.events-prev__icon,
-.events-next__icon {
-  border-radius: 50%;
-}
-
-.events-next__icon:hover path,
-.events-prev__icon:hover path {
-  fill: var(--secondary-light-blue);
+.js-events-swiper-wrapper {
+  margin-bottom: 30px;
 }
 
 .swiper-slide {
@@ -1483,12 +1493,46 @@ h4 {
   border-bottom: 1px solid var(--violet-middle);
 }
 
+.events__container {
+  padding-top: 33px;
+  padding-bottom: 78px;
+}
+
+.events-prev,
+.events-next {
+  position: absolute;
+  z-index: 100;
+  top: 49%;
+  border-radius: 50%;
+}
+
+.events-prev {
+  left: 1.5%;
+}
+
+.events-next {
+  right: 1.5%;
+}
+
+.events-prev__icon,
+.events-next__icon {
+  border-radius: 50%;
+}
+
+.events-next__icon:hover path,
+.events-prev__icon:hover path {
+  fill: var(--secondary-light-blue);
+}
+
+.swiper-pagination {
+  position: unset;
+}
+
 /* projects */
 
 .projects__container {
   padding-top: 8px;
   padding-bottom: 78px;
-  position: relative;
 }
 
 .projects__title {
@@ -1537,8 +1581,8 @@ h4 {
 
 .projects__swiper {
   padding-left: 75px;
-  padding-right: 75px;
   position: relative;
+  padding-right: 75px;
 }
 
 .projects-slide {
@@ -1572,11 +1616,15 @@ h4 {
 .projects-next {
   position: absolute;
   z-index: 100;
-  top: 73.5%;
+  bottom: 40%;
+}
+
+.projects-prev {
+  left: 0;
 }
 
 .projects-next {
-  right: 50px;
+  right: 0;
 }
 
 .projects-prev__icon,
@@ -1613,6 +1661,10 @@ h4 {
   margin-right: 29px;
 }
 
+.adress {
+  font-style: unset;
+}
+
 .cotacts__form {
   align-items: center;
   margin-right: 20px;
@@ -1623,8 +1675,13 @@ h4 {
   padding: 15px 15px 15px 15px;
   width: 15em;
   border-radius: 100px;
-  margin-right: 20px;
   border: 1px solid var(--grey);
+}
+
+.name__container, .tel__container {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .cotacts__form-call {
@@ -1637,6 +1694,13 @@ h4 {
   border-radius: 100px;
   border: 2px solid #9d5cd0;
 }
+
+.just-validate-error-label {
+  position: absolute;
+  top: -80%;
+  left: 0;
+}
+
 
 .contacts__message {
   padding-top: 5px;
