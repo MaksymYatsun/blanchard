@@ -55,7 +55,8 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 
@@ -1047,6 +1048,87 @@ h4 {
   flex-direction: column;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  max-width: 70%;
+  height: 500px;
+  width: 900px;
+  background: var(--white);
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
+  align-items: center;
+  z-index: 200;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal.modal-active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0%;
+  right: 1.5%;
+  font-size: var(--fs-48px);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-close:focus, .modal-close:hover {
+  color: var(--violet-middle);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-close:active {
+  color: var(--violet-dark);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-content {
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal-title {
+  font-size: var(--fs-24px);
+}
+
+.modal-time {
+  display: block;
+  font-size: var(--fs-12px);
+  color: var(--grey);
+  margin-bottom: 40px;
+}
+
+#overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#overlay.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#overlay.modal-active,
+body {
+  z-index: 100;
+}
+
 /* catalogue */
 
 .catalog {
@@ -1678,7 +1760,8 @@ h4 {
   border: 1px solid var(--grey);
 }
 
-.name__container, .tel__container {
+.name__container,
+.tel__container {
   position: relative;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -1690,7 +1773,7 @@ h4 {
   color: var(--violet-middle);
   line-height: 25px;
   padding: 10px 15px 10px 15px;
-  width: 18.3em;
+  width: 17.6em;
   border-radius: 100px;
   border: 2px solid #9d5cd0;
 }
@@ -1700,7 +1783,6 @@ h4 {
   top: -80%;
   left: 0;
 }
-
 
 .contacts__message {
   padding-top: 5px;

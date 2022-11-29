@@ -20,12 +20,13 @@
   <script src="js/search.js" defer></script>
   <script src="js/choice.js" defer></script>
   <script src="js/gallery-swiper.js" defer></script>
+  <script src="js/modal.js" defer></script>
   <script src="js/events-swiper.js" defer></script>
   <script src="js/projects-swiper.js" defer></script>
   <script src="js/burger.js" defer></script>
   <script src="js/dropdown.js" defer></script>
   <script src="js/accordion.js" defer></script>
-  <script src="js/msps.js" defer></script>
+  <script src="js/maps.js" defer></script>
   <script src="js/validation.js" defer></script>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/swiper-bundle.min.css" rel="stylesheet">
@@ -33,6 +34,8 @@
   <link href="css/simplebar.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/media.css" rel="stylesheet">
+  <link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <title>Blanchard</title>
 </head>
 
 <body>
@@ -336,7 +339,7 @@
             </div>
             <div class="swiper-container slides-container">
               <div class="swiper-wrapper gallery-swiper-wrapper">
-                <a class="swiper-slide gallery-slide" href="#">
+                <a class="swiper-slide gallery-slide" data-modal-target="#torso">
                   <picture>
                     <source srcset="img/gallery/xs/gallery__carousel__img__xs__1.jpg" media="(max-width: 320px)">
                     <source srcset="img/gallery/md/gallery__carousel__img__md__1.jpg" media="(max-width: 768px)">
@@ -344,7 +347,7 @@
                     <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__1.jpg" alt>
                   </picture>
                 </a>
-                <a class="swiper-slide gallery-slide" href="#">
+                <a class="swiper-slide gallery-slide" data-modal-target="#wooman">
                   <picture>
                     <source srcset="img/gallery/xs/gallery__carousel__img__xs__2.jpg" media="(max-width: 320px)">
                     <source srcset="img/gallery/md/gallery__carousel__img__md__2.jpg" media="(max-width: 768px)">
@@ -352,7 +355,7 @@
                     <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__2.jpg" alt>
                   </picture>
                 </a>
-                <a class="swiper-slide gallery-slide" href="#">
+                <a class="swiper-slide gallery-slide" data-modal-target="#harvest">
                   <picture>
                     <source srcset="img/gallery/xs/gallery__carousel__img__xs__3.jpg" media="(max-width: 320px)">
                     <source srcset="img/gallery/md/gallery__carousel__img__md__3.jpg" media="(max-width: 768px)">
@@ -360,7 +363,7 @@
                     <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__3.jpg" alt>
                   </picture>
                 </a>
-                <a class="swiper-slide gallery-slide" href="#">
+                <a class="swiper-slide gallery-slide">
                   <picture>
                     <source srcset="img/gallery/xs/gallery__carousel__img__xs__4.jpg" media="(max-width: 320px)">
                     <source srcset="img/gallery/md/gallery__carousel__img__md__4.jpg" media="(max-width: 768px)">
@@ -368,7 +371,7 @@
                     <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__4.jpg" alt>
                   </picture>
                 </a>
-                <a class="swiper-slide gallery-slide" href="#">
+                <a class="swiper-slide gallery-slide">
                   <picture>
                     <source srcset="img/gallery/xs/gallery__carousel__img__xs__5.jpg" media="(max-width: 320px)">
                     <source srcset="img/gallery/md/gallery__carousel__img__md__5.jpg" media="(max-width: 768px)">
@@ -376,7 +379,7 @@
                     <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__5.jpg" alt>
                   </picture>
                 </a>
-                <a class="swiper-slide gallery-slide" href="#">
+                <a class="swiper-slide gallery-slide">
                   <picture>
                     <source srcset="img/gallery/xs/gallery__carousel__img__xs__6.jpg" media="(max-width: 320px)">
                     <source srcset="img/gallery/md/gallery__carousel__img__md__6.jpg" media="(max-width: 768px)">
@@ -386,6 +389,65 @@
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal flex" id="torso">
+        <div class="modal-wrapper flex">
+          <picture>
+            <source srcset="img/gallery/gallery-modal/xs/modal-xs-1.jpg" media="(max-width: 620px)">
+            <source srcset="img/gallery/gallery-modal/md/modal-md-1.jpg" media="(max-width: 768px)">
+            <source srcset="img/gallery/gallery-modal/xl/modal-xl-1.jpg" media="(max-width: 1368px)">
+            <img class="modal-img" src="img/gallery/gallery-modal/xxl/modal-xxl-1.jpg" alt>
+          </picture>
+          <div class="modal-content flex">
+            <button class="modal-close btn-reset" data-close-button>&times;</button>
+            <h4 class="modal-title">Казимир Малевич</h4>
+            <h5 class="modal-painting">«Торс»</h5>
+            <span class="modal-time">1929</span>
+            <p class="modal-descr">Работу 'Торс' создал в 1929 году художник Казимир Малевич в стиле 'Neo-Suprematism'.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal flex" id="wooman">
+        <div class="modal-wrapper flex">
+          <picture>
+            <source srcset="img/gallery/gallery-modal/xs/modal-xs-2.jpg" media="(max-width: 620px)">
+            <source srcset="img/gallery/gallery-modal/md/modal-md-2.jpg" media="(max-width: 768px)">
+            <source srcset="img/gallery/gallery-modal/xl/modal-xl-2.jpg" media="(max-width: 1368px)">
+            <img class="modal-img" src="img/gallery/gallery-modal/xxl/modal-xxl-2.jpg" alt>
+          </picture>
+          <div class="modal-content flex">
+            <button class="modal-close btn-reset" data-close-button>&times;</button>
+            <h4 class="modal-title">Казимир Малевич</h4>
+            <h5 class="modal-painting">«Женщина с граблями»</h5>
+            <span class="modal-time">1931–1932</span>
+            <p class="modal-descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
+              принялся
+              за её создание в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской
+              и Варшавской
+              выставок в 1927 году.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal flex" id="harvest">
+        <div class="modal-wrapper flex">
+          <picture>
+            <source srcset="img/gallery/gallery-modal/xs/modal-xs-3.jpg" media="(max-width: 620px)">
+            <source srcset="img/gallery/gallery-modal/md/modal-md-3.jpg" media="(max-width: 768px)">
+            <source srcset="img/gallery/gallery-modal/xl/modal-xl-3.jpg" media="(max-width: 1368px)">
+            <img class="modal-img" src="img/gallery/gallery-modal/xxl/modal-xxl-3.jpg" alt>
+          </picture>
+          <div class="modal-content flex">
+            <button class="modal-close btn-reset" data-close-button>&times;</button>
+            <h4 class="modal-title">Казимир Малевич</h4>
+            <h5 class="modal-painting">Lorem ipsum</h5>
+            <span class="modal-time">1911</span>
+            <p class="modal-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ipsam sunt maxime,
+              unde
+              sequi explicabo consequuntur odit adipisci facere in sit, facilis necessitatibus est deserunt officiis
+              voluptas voluptatum assumenda distinctio?</p>
           </div>
         </div>
       </div>
@@ -1017,7 +1079,7 @@
             <h4 class="section__subtitle contacts__subtitle">Шоурум №4</h4>
             <address class="adress">Леонтьевский переулок, дом 5/1</address>
           </div>
-          <form class="cotacts__form flex" action="">
+          <form class="cotacts__form flex" action>
             <div class="name__container">
               <input class="cotacts__form-name name" placeholder="Имя*" type="name" name="name">
             </div>
@@ -1060,6 +1122,7 @@
       </div>
     </div>
   </footer>
+  <div class id="overlay"></div>
 </body>
 
 </html>
