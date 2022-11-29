@@ -23,6 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const phone = selector.inputmask.unmaskedvalue();
         return phone.length === 10
       },
-      errorMessage: 'Не достаточное количество символов в строке',
+      errorMessage: 'Номер не из 10-ти цифр',
     }]);
 })

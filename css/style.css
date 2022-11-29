@@ -52,12 +52,15 @@ a {
 }
 
 p,
-h1,
 h2,
 h3,
 h4,
 h5 {
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -110,6 +113,18 @@ h5 {
   font-size: var(--fs-24px);
   font-weight: 600;
   line-height: 32px;
+}
+
+.main__title {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header________________________________________________________________________________header___________________________________________*/
@@ -1755,7 +1770,7 @@ body {
 .cotacts__form-name,
 .cotacts__form-phone {
   padding: 15px 15px 15px 15px;
-  width: 15em;
+  min-width: 15em;
   border-radius: 100px;
   border: 1px solid var(--grey);
 }
@@ -1776,12 +1791,14 @@ body {
   width: 17.6em;
   border-radius: 100px;
   border: 2px solid #9d5cd0;
+  margin-bottom: 20px;
 }
 
 .just-validate-error-label {
   position: absolute;
-  top: -80%;
-  left: 0;
+  top: -28%;
+  left: 5%;
+  font-size: var(--fs-12px);
 }
 
 .contacts__message {

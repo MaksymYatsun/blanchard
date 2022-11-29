@@ -24,6 +24,7 @@
   <script src="js/events-swiper.js" defer></script>
   <script src="js/projects-swiper.js" defer></script>
   <script src="js/burger.js" defer></script>
+  <script src="js/bg.js" defer></script>
   <script src="js/dropdown.js" defer></script>
   <script src="js/accordion.js" defer></script>
   <script src="js/maps.js" defer></script>
@@ -52,22 +53,22 @@
           <div class="menu-wrap flex">
             <ul class="menu flex">
               <li class="menu__item">
-                <a class="header__link" href="#">О нас</a>
+                <a class="header__link" href="#about-us">О нас</a>
               </li>
               <li class="menu__item">
-                <a class="header__link" href="#">Галерея</a>
+                <a class="header__link" href="#gallery">Галерея</a>
               </li>
               <li class="menu__item">
-                <a class="header__link" href="#">Каталог</a>
+                <a class="header__link" href="#catalog">Каталог</a>
               </li>
               <li class="menu__item">
-                <a class="header__link" href="#">События</a>
+                <a class="header__link" href="#events">События</a>
               </li>
               <li class="menu__item">
-                <a class="header__link" href="#">Проекты</a>
+                <a class="header__link" href="#projects">Проекты</a>
               </li>
               <li class="menu__item">
-                <a class="header__link" href="#">Контакты</a>
+                <a class="header__link" href="#contacts">Контакты</a>
               </li>
               <li class="menu__item">
                 <a class="login__link flex" href>
@@ -267,6 +268,7 @@
     <section class="hero">
       <div class="container hero__container">
         <div class="hero__content flex">
+          <h1 class="main__title">Blanchard: художественная галерея.</h1>
           <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
           <p class="hero__descr">Мы вынуждены отталкиваться от того, что реализация намеченных плановых
             заданий
@@ -285,7 +287,7 @@
         </div>
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="container about-us__container">
         <h2 class="section__title about-us__title">О нас</h2>
         <p class="about-us__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
@@ -452,7 +454,7 @@
         </div>
       </div>
     </section>
-    <section class="catalog">
+    <section id="catalog" class="catalog">
       <div class="container">
         <h2 class="section__title catalog__title">Каталог</h2>
         <p class="section__descr catalog__descr">Акционеры крупнейших компаний, которые представляют собой яркий пример
@@ -462,7 +464,7 @@
           на независимые элементы.</p>
         <div class="catalog__wrap js-tabs-wrap">
           <div class="catalog__content-wrap">
-            <div class="catalog__painter-info active js-tab-content" data-target="domenico">
+            <div class="catalog__painter-info active js-tab-content" id="tab" data-target="domenico">
               <picture>
                 <source srcset="img/catalogue/catalogue__xs.jpg" media="(max-width: 320px)">
                 <source srcset="img/catalogue/catalogue__md.jpg" media="(max-width: 768px)">
@@ -477,7 +479,7 @@
                 со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают
                 знатные граждане Флоренции в костюмах того времени).</p>
             </div>
-            <div class="catalog__painter-info js-tab-content" data-target="empty">
+            <div class="catalog__painter-info js-tab-content" id="tab" data-target="empty">
               <picture>
                 <img class="catalog__painer-img" src="img/catalogue/catalogue__empty/empty__cover__xxl.jpg" alt>
               </picture>
@@ -505,151 +507,151 @@
                   <ul class="accordion__inner-list reset-list">
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Бенедетто ди Биндо</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Бергоньоне, Амброджо</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Биссоло, Франческо</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Больтраффио, Джованни</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Бонсиньори, Франческо</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Боттичини, Рафаэлло</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Брамантино</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Бреа, Людовико</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="domenico">
+                        data-path="domenico" onclick="scrollToTarget()">
                         <span class="link__text">Бьяджо д’Антонио Туччи</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Веккьетта</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Андреа Верроккьо</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn  active" href="#"
-                        data-path="domenico">
+                        data-path="domenico" onclick="scrollToTarget()">
                         <span class="link__text">Доменико Гирландайо</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Беноццо Гоццоли</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Граначчи, Франческо</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Грегорио ди Чекко</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Джованни да Удине</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="domenico">
+                        data-path="domenico" onclick="scrollToTarget()">
                         <span class="link__text">Джованни ди Паоло</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="domenico">
+                        data-path="domenico" onclick="scrollToTarget()">
                         <span class="link__text">Джорджоне</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Парентино, Бернардо</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Пезеллино</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Пьетро Перуджино</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Перуцци, Бальдассаре</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Пизанелло</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Пинтуриккьо</span>
                       </a>
                     </li>
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
-                        data-path="empty">
+                        data-path="empty" onclick="scrollToTarget()">
                         <span class="link__text">Грегорио ди Чекко</span>
                       </a>
                     </li>
@@ -835,7 +837,7 @@
         </div>
       </div>
     </section>
-    <section class="events">
+    <section id="events" class="events">
       <div class="container events__container">
         <h2 class="section__title events__title">События</h2>
         <div class="swiper js-events-swiper flex">
@@ -975,7 +977,7 @@
         </div>
       </div>
     </section>
-    <section class="projcts">
+    <section id="projects" class="projcts">
       <div class="container projects__container">
         <h2 class="section__title projects__title">Проекты</h2>
         <p class="section__descr projects__descr">Предварительные выводы: постоянное информационно-пропагандистское
@@ -1072,7 +1074,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts contacts__section">
+    <section id="contacts" class="contacts contacts__section">
       <div class="container contacts__container">
         <div class="contacts__top flex">
           <div class="contacts__adress">
@@ -1080,10 +1082,10 @@
             <address class="adress">Леонтьевский переулок, дом 5/1</address>
           </div>
           <form class="cotacts__form flex" action>
-            <div class="name__container">
+            <div class="name__container flex">
               <input class="cotacts__form-name name" placeholder="Имя*" type="name" name="name">
             </div>
-            <div class="tel__container">
+            <div class="tel__container flex">
               <input class="cotacts__form-phone tel" placeholder="Номер телефона*" type="tel" name="tel">
             </div>
             <button class="cotacts__form-call btn-reset">Заказать <span class="contacts__form-call--hiden">обратный

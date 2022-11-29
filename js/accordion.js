@@ -40,6 +40,12 @@ function setTabs(params) {
   tabBtns.forEach(function (el) {
     el.addEventListener("click", onTabClick);
   });
+
 }
 
 setTabs(params);
+
+
+function scrollToTarget(){
+  document.getElementById("tab").scrollIntoView();
+}
