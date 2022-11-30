@@ -391,7 +391,7 @@ html {
 
 .categories__dropdown {
   position: absolute;
-  bottom: -4px;
+  bottom: -22px;
   left: 0;
   z-index: 1;
   display: none;
@@ -955,16 +955,19 @@ html {
 
 .choices__inner {
   padding: 5px 7.5px 7.5px 10px;
-  background: black;
+  background: unset;
   border-radius: 6px;
   min-height: auto;
   width: 94.5%;
   border: none;
 }
 
+.choices__inner:hover, .choices__inner:focus, .choices__inner:active {
+  background: rgba(255, 255, 255, 0.2)
+}
+
 .choices__item {
   font-size: initial;
-  background: black;
 }
 
 .choices__item--choice {
@@ -1811,6 +1814,8 @@ body {
 /*events*/
 .events__container {
   position: relative;
+  padding-top: 33px;
+  padding-bottom: 20px;
 }
 
 .js-events-swiper {
@@ -1884,11 +1889,6 @@ body {
   margin-top: auto;
   color: var(--violet-middle);
   border-bottom: 1px solid var(--violet-middle);
-}
-
-.events__container {
-  padding-top: 33px;
-  padding-bottom: 78px;
 }
 
 .events-prev,
@@ -1969,7 +1969,7 @@ body {
 }
 
 .js-projects-swiper {
-  padding-right: 15px;
+  padding-right: 20px;
 }
 
 .projects__swiper {
@@ -2016,6 +2016,10 @@ body {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   border-color: var(--violet-middle);
+}
+
+.projects-link {
+  justify-content: center;
 }
 
 .projects-prev,
@@ -2073,29 +2077,37 @@ body {
   font-style: unset;
 }
 
-.cotacts__form {
+.contacts__form {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   margin-right: 20px;
 }
 
-.cotacts__form-name,
-.cotacts__form-phone {
+.contacts__form-name,
+.contacts__form-phone {
   padding: 15px 15px 15px 15px;
   min-width: 15em;
   border-radius: 100px;
   border: 1px solid var(--grey);
 }
 
+.contacts__form-name:focus,
+.contacts__form-phone:focus,
+.contacts__form-name:hover,
+.contacts__form-phone:hover,
+.contacts__form-name:active,
+.contacts__form-phone:active {
+  background-color: var(--light-grey);
+}
+
 .name__container,
 .tel__container {
   position: relative;
   margin-right: 20px;
-  margin-bottom: 20px;
 }
 
-.cotacts__form-call {
+.contacts__form-call {
   font-weight: 700;
   font-size: var(--fs-18px);
   color: var(--violet-middle);
@@ -2104,7 +2116,20 @@ body {
   width: 17.6em;
   border-radius: 100px;
   border: 2px solid #9d5cd0;
-  margin-bottom: 20px;
+}
+
+.contacts__form-call:focus{
+  outline: 2px solid var(--secondary-purple);
+}
+
+.contacts__form-call:hover{
+  background-color: var(--violet-middle);
+  color: var(--white);
+}
+
+.contacts__form-call:active{
+  background-color: var(--violet-dark);
+  border-color: var(--violet-ultra-light);
 }
 
 .just-validate-error-label {
@@ -2125,6 +2150,18 @@ body {
 .contacts__message-subtitle {
   letter-spacing: -0.025em;
   margin-bottom: 5px;
+}
+
+.contacts__message-img {
+  border-radius: 50%;
+}
+
+.contacts__message-link:focus .contacts__message-img, .contacts__message-link:active .contacts__message-img {
+  opacity: 0.5;
+}
+
+.contacts__message-link:hover .contacts__message-img {
+  outline: 2px solid var(--violet-middle);
 }
 
 .contacts__bottom {
@@ -2178,4 +2215,16 @@ body {
 
 .vk {
   margin-right: 16px;
+}
+
+.vk, .odnoklasniki {
+  opacity: 0.8;
+}
+
+.vk:focus, .odnoklasniki:focus ,.vk:hover, .odnoklasniki:hover {
+  opacity: 1;
+}
+
+.vk:hover path, .odnoklasniki:hover path {
+  fill: var(--violet-middle);
 }

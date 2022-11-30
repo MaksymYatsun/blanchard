@@ -35,7 +35,7 @@
   <link href="css/simplebar.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/media.css" rel="stylesheet">
-  <link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
   <title>Blanchard</title>
 </head>
 
@@ -1005,47 +1005,47 @@
           <div class="swiper js-projects-swiper">
             <div class="swiper-wrapper js-projects-swiper__wrapper">
               <div class="swiper-slide projects-slide flex">
-                <a class="projects-link" href="#">
+                <a class="projects-link flex" href="#">
                   <img class="projects-slide-img" src="img/svg/partners/freelands__foundations.svg" alt>
                 </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <a class="projects-link" href="#">
+                <a class="projects-link flex" href="#">
                   <img class="projects-slide-img" src="img/svg/partners/institute__of__art.svg" alt>
                 </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <a class="projects-link" href="#">
+                <a class="projects-link flex" href="#">
                   <img class="projects-slide-img" src="img/svg/partners/workhouse.svg" alt>
                 </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <a class="projects-link" href="#">
+                <a class="projects-link flex" href="#">
                   <img class="projects-slide-img" src="img/svg/partners/1849.svg" alt>
                 </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <a class="projects-link" href="#">
+                <a class="projects-link flex" href="#">
                   <img class="projects-slide-img" src="img/svg/partners/hiscox.svg" alt>
                 </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <a class="projects-link" href="#">
+                <a class="projects-link flex" href="#">
                   <img class="projects-slide-img" src="img/svg/partners/camden.svg" alt>
                 </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <a class="projects-link" href="#">
+                <a class="projects-link flex" href="#">
                   <img class="projects-slide-img" src="img/svg/partners/stassen.svg" alt>
                 </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <a class="projects-link" href="#">
+                <a class="projects-link flex" href="#">
                   <img class="projects-slide-img" src="img/svg/partners/watts__gallery.svg" alt>
                 </a>
               </div>
               <div class="swiper-slide projects-slide flex">
-                <a class="projects-link" href="#">
+                <a class="projects-link flex" href="#">
                   <img class="projects-slide-img" src="img/svg/partners/ecole__superieure.svg" alt>
                 </a>
               </div>
@@ -1081,14 +1081,15 @@
             <h4 class="section__subtitle contacts__subtitle">Шоурум №4</h4>
             <address class="adress">Леонтьевский переулок, дом 5/1</address>
           </div>
-          <form class="cotacts__form flex" action>
+          <form class="contacts__form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
             <div class="name__container flex">
-              <input class="cotacts__form-name name" placeholder="Имя*" type="name" name="name">
+              <input class="contacts__form-name name" placeholder="Имя*" type="name" name="name">
             </div>
             <div class="tel__container flex">
-              <input class="cotacts__form-phone tel" placeholder="Номер телефона*" type="tel" name="tel">
+              <input class="contacts__form-phone tel" placeholder="Номер телефона*" type="tel" name="tel">
             </div>
-            <button class="cotacts__form-call btn-reset">Заказать <span class="contacts__form-call--hiden">обратный
+            <button class="contacts__form-call btn-reset" type="submit">Заказать <span
+                class="contacts__form-call--hiden">обратный
                 звонок</span></button>
           </form>
           <div class="contacts__message">
@@ -1116,10 +1117,21 @@
       </a>
       <div class="footer__social">
         <a class="vk" href>
-          <img class="vk-img" src="img/svg/vk.svg" alt>
+          <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"
+              fill="#CACACA" />
+          </svg>
         </a>
         <a class="odnoklasniki" href>
-          <img class="ok-img" src="img/svg/ok.svg" alt>
+          <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z"
+              fill="#CACACA" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM14.5125 14.9858C14.5125 10.4984 18.1503 6.86047 22.6379 6.86047C27.1254 6.86047 30.7632 10.4984 30.7632 14.9858C30.7632 19.4734 27.1254 23.1115 22.6379 23.1115C18.1503 23.1115 14.5125 19.4734 14.5125 14.9858ZM30.8117 27.291C30.7086 27.3737 28.7593 28.9142 25.5064 29.5769L30.4165 34.4432C31.28 35.3053 31.2811 36.7042 30.419 37.5677C29.5569 38.431 28.1583 38.4324 27.2945 37.5701L22.5276 32.928L18.1979 37.5402C17.7644 37.9899 17.1862 38.216 16.6074 38.216C16.0553 38.216 15.5027 38.0106 15.074 37.5972C14.1956 36.7502 14.1701 35.3516 15.0171 34.4733L19.6777 29.6025C16.3336 28.9555 14.3039 27.3749 14.1993 27.291C13.2475 26.5277 13.0946 25.1372 13.8579 24.1852C14.6212 23.2334 16.0115 23.0805 16.9636 23.8437C16.9837 23.86 19.1067 25.4549 22.5275 25.4572C25.9483 25.4549 28.0273 23.86 28.0474 23.8437C28.9995 23.0805 30.3899 23.2334 31.1531 24.1852C31.9165 25.1372 31.7636 26.5277 30.8117 27.291Z"
+              fill="#CACACA" />
+          </svg>
         </a>
       </div>
     </div>
