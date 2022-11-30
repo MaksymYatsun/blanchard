@@ -4,14 +4,14 @@ function init() {
   const myMap = new ymaps.Map(
     "map",
     {
-      center: [55.75846806898367, 37.60108849999989],
+      center: [55.759897, 37.613388],
       zoom: 14,
       controls: ['geolocationControl', 'zoomControl']
     },
     {
       suppressMapOpenBlock: true,
       geolocationControlSize: "large",
-      geolocationControlPosition:  { top: "200px", right: "20px" },
+      geolocationControlPosition: { top: "200px", right: "20px" },
       geolocationControlFloat: 'none',
       zoomControlSize: "small",
       zoomControlFloat: "none",
@@ -22,11 +22,11 @@ function init() {
   myMap.behaviors.disable('scrollZoom');
 
   const myPlacemark = new ymaps.Placemark(
-    [55.75846806898367, 37.60108849999989],
+    [55.759897, 37.61338],
     {},
     {
       iconLayout: "default#image",
-      iconImageHref: "https://img.icons8.com/office/2x/one-free.png",
+      iconImageHref: "../img/svg/map-icon.svg",
       iconImageSize: [40, 40],
       iconImageOffset: [-20, -40],
     }
