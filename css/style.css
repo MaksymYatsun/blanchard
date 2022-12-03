@@ -111,7 +111,7 @@ html {
   margin-bottom: 20px;
 }
 
-.section__descr {
+.section-descr {
   margin-bottom: 30px;
 }
 
@@ -1602,7 +1602,7 @@ body {
   display: flex;
 }
 
-.empty-ac__wrapper {
+.empty-ac {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
