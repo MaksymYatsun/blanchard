@@ -221,7 +221,7 @@
     font-size: var(--fs-24px);
   }
 
-  .login__link {
+  .login {
     border-radius: 100px;
     width: 8.6115em;
     padding: 10px 50px 10px 50px;
@@ -232,11 +232,11 @@
     width: 40px;
   }
 
-  .login__link::after {
+  .login::after {
     left: 65px;
     top: 19.6px;
   }
-  .login__link:hover.login__link::after {
+  .login:hover.login::after {
     left: 60px;
     -webkit-transition: all ease-in-out 0.3s;
     -o-transition: all ease-in-out 0.3s;

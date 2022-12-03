@@ -227,7 +227,7 @@ html {
   transition: all ease-in-out 0.3s;
 }
 
-.login__link {
+.login {
   color: var(--white);
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -244,7 +244,7 @@ html {
   transition: all ease-in-out 0.3s;
 }
 
-.login__link::after {
+.login::after {
   content: "";
   background-color: currentColor;
   left: 5px;
@@ -257,17 +257,17 @@ html {
   transition: all ease-in-out 0.3s;
 }
 
-.login__link:focus:not(:active) {
+.login:focus:not(:active) {
   background-color: var(--violet-dark);
   -webkit-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
-.login__link:hover,
-.login__link:hover .login__icon,
-.login__link:hover.login__link::after,
-.login__link:hover.login__icon {
+.login:hover,
+.login:hover .login__icon,
+.login:hover.login::after,
+.login:hover.login__icon {
   left: 0;
   color: var(--secondary-purple);
   fill: var(--secondary-purple);
@@ -276,10 +276,10 @@ html {
   transition: all ease-in-out 0.3s;
 }
 
-.login__link:active,
-.login__link:active .login__icon,
-.login__link:active.login__link::after,
-.login__link:hover.login__icon {
+.login:active,
+.login:active .login__icon,
+.login:active.login::after,
+.login:hover.login__icon {
   color: var(--violet-middle);
   fill: var(--violet-middle);
   -webkit-transition: all ease-in-out 0.3s;
