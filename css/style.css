@@ -49,6 +49,7 @@
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 p,
@@ -57,6 +58,10 @@ h3,
 h4,
 h5 {
   margin: 0;
+}
+
+input, button, span {
+  outline: none;
 }
 
 html {
