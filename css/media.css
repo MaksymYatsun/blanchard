@@ -255,7 +255,7 @@
     display: none;
   }
 
-  .form-btn__open-icon {
+  .form-container__open-icon {
     width: 29px;
     height: 36px;
   }
@@ -911,7 +911,7 @@
     padding-left: 15px;
   }
 
-  .form-btn__open-icon {
+  .form-container__open-icon {
     width: 16px;
     height: 16px;
   }

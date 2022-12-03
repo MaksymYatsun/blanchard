@@ -77,7 +77,7 @@ html {
   cursor: pointer;
 }
 
-.input__reset {
+.input-reset {
   border: 0;
   background-color: unset;
 }
@@ -599,34 +599,34 @@ html {
   display: none;
 }
 
-.form-btn__open path,
-.form-btn__open rect,
-.form-btn__submit path,
-.form-btn__submit rect {
+.form-container__open path,
+.form-container__open rect,
+.form-container__submit path,
+.form-container__submit rect {
   -webkit-transition: fill 0.3s ease-in-out;
   -o-transition: fill 0.3s ease-in-out;
   transition: fill 0.3s ease-in-out;
 }
 
-.form-btn__open:hover path,
-.form-btn__open:hover rect,
-.form-btn__submit:hover path,
-.form-btn__submit:hover rect {
+.form-container__open:hover path,
+.form-container__open:hover rect,
+.form-container__submit:hover path,
+.form-container__submit:hover rect {
   fill: orange;
 }
 
-.form-btn__submit {
+.form-container__submit {
   margin-right: 20px;
   height: 16px;
 }
 
-.form-btn__open {
+.form-container__open {
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 
-.form-btn__open.active {
+.form-container__open.active {
   opacity: 0;
 }
 
