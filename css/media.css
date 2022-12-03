@@ -596,8 +596,7 @@
     margin-right: unset;
   }
 
-  .name__container,
-  .tel__container {
+  .contacts__wrapper {
     position: relative;
     margin-right: 20px;
     margin-bottom: 12px;
@@ -828,8 +827,7 @@
     width: 100%;
   }
 
-  .name__container,
-  .tel__container {
+  .contacts__wrapper {
     width: 100%;
     margin-right: unset;
   }
@@ -917,7 +915,6 @@
   }
 
   /*hero*/
-
 
   .hero__container {
     padding-top: 54px;
@@ -1160,7 +1157,7 @@
 
   /*contacts*/
 
-  .contacts__section {
+  .contacts {
     border: unset;
   }
 
@@ -1200,7 +1197,7 @@
     padding-top: 6px;
     padding-bottom: 6px;
   }
-  .contacts__form-call--hiden {
+  .hiden {
     display: none;
   }
 
